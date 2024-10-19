@@ -10,7 +10,13 @@ niya_jao.add_rider(rahim)
 karim = Driver("Karim", "karim@gmail.com", 29723, "banani")
 niya_jao.add_driver(karim)
 
-print(niya_jao)
+rahim.request_ride(niya_jao, "uttara", "car")
+
+karim.reach_destination(rahim.current_ride)
+
+rahim.show_current_ride()
+
+# print(niya_jao)
 
 
 
